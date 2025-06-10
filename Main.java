@@ -1,7 +1,7 @@
 import java.lang.Math;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         int num1bin = 0b1000; // Binary Number;
         int num2hex = 0x7E; // Hexadecimal number
         int num3 = 10_00_00_000; // to easily count the number of Zeros
@@ -66,7 +66,9 @@ public class Main {
         // String Buffer is Thread safe while String Builder is not.
         StringBuffer sb = new StringBuffer("Navin");
         System.out.println(sb.capacity());
-
+       
+         // to load class only not to instantiate its object
+       Class.forName("Mobile");
     }
 
 }
